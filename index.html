@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora - IMC</title>
+</head>
+<body>
+    <header>
+        <h1>Calculadora IMC</h1>
+    </header>
+    <main>
+        <section>
+            <p>Sexo</p>
+            <input type="radio" name="txtradio" id="mas" checked>
+            <label for="mas">Masculino</label>
+            <input type="radio" name="txtradio" id="fem">
+            <label for="fem">Feminino</label> 
+        </section>
+        <section>
+            <p>Idade</p>
+            <input type="number" name="txtidade" id="txtidade">
+        </section>
+        <section>
+            <p>Altura</p>
+            <input type="number" name="txtalt" id="txtalt">
+        </section>
+        <section>
+            <p>Peso</p>
+            <input type="number" name="txtpes" id="txtpes">
+        </section>
+        <section>
+            <input type="button" value="Limpar" onclick="limpar()">
+            <input type="button" value="Calcular" onclick="calcular()">
+        </section>
+        <section id="resposta">
+        </section>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
