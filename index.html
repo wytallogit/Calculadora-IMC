@@ -11,6 +11,7 @@
         <h1>Calculadora IMC</h1>
     </header>
     <main>
+        <p>Coloque seus dados</p>
         <section>
             <p>Sexo</p>
             <input type="radio" name="txtradio" id="mas" checked>
@@ -20,19 +21,19 @@
         </section>
         <section>
             <p>Idade</p>
-            <input type="number" name="txtidade" id="txtidade">
+            <input type="number" name="txtidade" id="txtidade" placeholder="Ex: 20">
         </section>
         <section>
             <p>Altura</p>
-            <input type="number" name="txtalt" id="txtalt">
+            <input type="number" name="txtalt" id="txtalt" placeholder="Ex: 1,60">
         </section>
         <section>
             <p>Peso</p>
-            <input type="number" name="txtpes" id="txtpes">
+            <input type="number" name="txtpes" id="txtpes" placeholder="Ex: 89,4">
         </section>
         <section>
-            <input type="button" value="Limpar" onclick="limpar()">
-            <input type="button" value="Calcular" onclick="calcular()">
+            <input id="limpar"  type="button" value="Limpar" onclick="limpar()">
+            <input id="calcular" type="button" value="Calcular" onclick="calcular()">
         </section>
         <section id="resposta">
         </section>

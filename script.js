@@ -30,21 +30,22 @@ function calcular() {
         let mensagem = ''
         
         if (resultado <= 16.9) {
-            mensagem = 'Muito abaixo do peso'
+            mensagem = 'muito abaixo do peso'
         } else if (resultado <= 18.4) {
-            mensagem = 'Abaixo do peso'
+            mensagem = 'abaixo do peso'
         } else if (resultado <= 24.9) {
-            mensagem = 'Peso normal'
+            mensagem = 'peso normal'
         } else if (resultado <= 29.9) {
-            mensagem = 'Acima do peso'
+            mensagem = 'acima do peso'
         } else if (resultado <= 34.9) {
-            mensagem = 'Obesidade I'
+            mensagem = 'obesidade I'
         } else if (resultado <= 40) {
-            mensagem = 'Obesidade II'
+            mensagem = 'obesidade II'
         } else {
-            mensagem = 'Obedidade III'
+            mensagem = 'obedidade III'
         }
-        alert(`${resultado} e ${mensagem}`)
+        let resposta = document.getElementById('resposta')
+        resposta.innerHTML = `Seu IMC é de <strong>${resultado}</strong> kg/m². De acordo com a OMS, você está <strong>${mensagem}</strong>.`
     }  
 
 }
