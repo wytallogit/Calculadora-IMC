@@ -12,14 +12,17 @@ function calcular() {
     }
     
     let idade = Number(txtidade.value)
-    let altura = Number(txtalt.alt)
+    let altura = Number(txtalt.value)
     let peso = Number(txtps.value)
 
-
-    function caulculoIMC() {
-        return 
-    }
 
 }
 
 
+function Imc(x, y) {
+    const calcularImc = x + y
+    return calcularImc
+}
+
+const resultado = Imc(peso, altura)
+alert(resultado)
