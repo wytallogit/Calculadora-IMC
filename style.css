@@ -33,6 +33,7 @@ main {
     margin: 100px auto;
     border-radius: 10px;
     box-shadow: 5px 5px 5px rgb(55, 55, 55);
+    text-align: center;
 }
 
 
@@ -59,4 +60,9 @@ input {
     background-color: rgb(175, 0, 0);
     color: white;
     padding: 5px;
+}
+
+#botoes {
+    text-align: center;
+    margin-top: 20px;
 }
